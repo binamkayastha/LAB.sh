@@ -5,7 +5,8 @@ counter=0;
 while :
 do
     feh --bg-fill ~/Images/trainZip/train-$counter.png;
-    sleep 0.02; #Basically determines how much cpu it takes. More transition time, less cpu
+    #Basically determines how much cpu it takes. More transition time, less cpu
+    sleep 0.02;
     let counter++;
 
     #echo $counter; # debugging purposes, please remove

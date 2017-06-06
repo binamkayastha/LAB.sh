@@ -4,7 +4,7 @@ A simple shell script that displays gifs on the desktop by changing the backgrou
 
 The reason I created this was because all the other options for playing an animated background for linux take up around 30-50 percent CPU. I really wanted to get this down. The goal of the project is to get it down to around at least 2%.
 
-Currently, the program runs at around 5% which is a huge improvement over current technologies.
+Currently, the program runs at consistently less than 10% (even after an hour of running with a 0.02 sleep) which is a huge improvement over current technologies.
 
 # Disclaimer
 I've only tested this on i3, I have no idea what the behavior would be for other x window systems.
