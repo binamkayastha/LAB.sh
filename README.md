@@ -1,4 +1,4 @@
-# LAB - Linux Animated Background [In Progess]
+# LAB - Linux Animated Background [In Progess | Open for Contribution]
 
 A simple shell script that displays gifs on the desktop by changing the background image via feh.
 
