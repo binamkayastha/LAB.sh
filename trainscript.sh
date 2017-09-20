@@ -1,9 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 # double check if above is corect
 
 sleep_value=0.02
-num_of_images=48
-counter=0;
 
 # gif variable
 # take name_gif (no extention)
@@ -13,14 +11,16 @@ counter=0;
 
 # after all that works, go
 
+base_dir=$1
+
+list_files=$(find $base_dir | sort -n)
+
 while :
 do
-    feh --bg-fill ~/Images/trainZip/train-$counter.png;
-    # Basically determines how much cpu it takes. More transition time, less cpu
-    sleep $sleep_value;
-    let counter++;
-
-    if [ $counter -eq $num_of_images ]; then
-        counter=0;
-    fi
+	for f in $list_files ; do
+		echo $f
+		feh --bg-fill $f;
+	    # Basically determines how much cpu it takes. More transition time, less cpu
+	    sleep $sleep_value;
+	done
 done
